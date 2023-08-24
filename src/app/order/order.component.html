@@ -1,0 +1,31 @@
+<div class="supplier-order-form">
+    <h2 class="form-heading">Supplier Order Form</h2>
+    <form (ngSubmit)="onSubmit()" #orderForm="ngForm">
+      <div class="form-group">
+        <label for="supplierEmail">Supplier Email:</label>
+        <input
+          type="email"
+          id="supplierEmail"
+          name="supplierEmail"
+          [(ngModel)]="orderData.supplierEmail"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="quantityRequired">Quantity Required:</label>
+        <input
+          type="number"
+          id="quantityRequired"
+          name="quantityRequired"
+          [(ngModel)]="orderData.quantityRequired"
+          required
+          min="1"
+        />
+      </div>
+      <a routerLink="/createorder" class="btn btn-primary">Back</a>
+      <div class="form-actions">
+        <button type="submit" [disabled]="!orderForm.valid">Submit</button>
+      </div>
+    </form>
+  </div>
+  

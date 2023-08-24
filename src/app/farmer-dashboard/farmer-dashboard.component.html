@@ -1,0 +1,66 @@
+<app-navbar></app-navbar>
+
+<!-- dashboard.component.html -->
+<div class="dashboard-container">
+  <!-- Vertical Navbar -->
+  <div class="navbar">
+    <!-- Navbar content goes here -->
+    <ul>
+      <li><a routerLink="/farmer">Home</a></li>
+      <li><a routerLink="/edit-profile">Profile</a></li>
+      <li><a routerLink="/edit-profile2">Edit Profile</a></li>
+      <li><a routerLink="/add-complaint">Add Complaint</a></li>
+      <li><a routerLink="/view-complaint">View Complaint</a></li>
+      <li><a routerLink="/update-complaint">Update Complaint</a></li>
+
+      <li><a routerLink="/addproduct">Add Product</a></li>
+      <li><a href="#">View Orders</a></li>
+      <li><a routerLink="/allAdvertisements">All Advertisements</a></li>
+      <li><a routerLink="/test">My Products</a></li>
+      <li><a routerLink="/createorder"> Create Order</a>   </li>
+   
+      <!-- Add more items here if needed -->
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Main content goes here -->
+    <h1>Hello {{name}}, Welcome to Your Dashboard </h1>
+     <h2></h2>
+    
+    <!-- <p>This is the main content area where you can display various dashboard components.</p> -->
+    
+
+
+
+<!-- <div class="product-list">
+  <h2 class="product-list-heading">Product List</h2>
+  <ul class="product-items">
+    <li *ngFor="let product of products" class="product-item">
+      <div class="product-thumbnail">
+      
+        <span class="placeholder-image">Product Image</span>
+      </div>
+      <div class="product-details">
+        <h3 class="product-name">{{ product.productName }}</h3>
+        <div class="product-meta">
+          <span class="product-quantity">Quantity: {{ product.productQuantity }}</span>
+          <span class="product-unit-price">Unit Price: {{ product.productUnitPrice | currency }}</span>
+          <span class="product-total-price">Total Price: {{ product.productQuantity * product.productUnitPrice | currency }}</span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div> -->
+
+
+
+
+  </div>
+</div>
+
+
+
+
+<app-footer></app-footer>

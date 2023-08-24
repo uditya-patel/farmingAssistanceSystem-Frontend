@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <h2>My Advertisements</h2>
+    <!-- <a routerLink="/supplier" class=" btn btn-primry back-button">Back</a> -->
+    <button routerLink="/supplier" class="btn btn-primary">Back</button>
+    <hr>
+    <div class="ad-list-container">
+      <div class="ad-list">
+        <div *ngFor="let advertisement of advertisements" class="ad-card">
+          <div class="ad-id">Advertisement Id: {{ advertisement.addId }}</div>
+          <div class="ad-title">ProductName: {{ advertisement.cropName }}</div>
+          <div class="ad-description">Quantity Required: {{ advertisement.quantityRequired }} kg</div>
+          <div class="ad-price">Status: {{ advertisement.status }}</div>
+          <!-- Add more advertisement details as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <app-footer></app-footer>

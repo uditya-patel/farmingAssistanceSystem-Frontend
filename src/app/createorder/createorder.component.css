@@ -1,0 +1,155 @@
+/* .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .supplier-info {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-input {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .remove-product {
+    margin-left: 10px;
+    padding: 6px 12px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-product {
+    margin-top: 10px;
+    padding: 6px 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-order {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+   */
+
+   /* product-list.component.css  */
+.product-list {
+  padding: 20px;
+}
+
+.product-list-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+} 
+
+.product-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+ max-height: 80vh; /* Set maximum height to 80% of the viewport height */
+  overflow-y: auto; /*Enable vertical scrolling when needed */
+}
+
+.product-item {
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease; 
+} 
+
+.product-item:hover {
+  transform: translateY(-5px);
+}
+
+.product-thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #fff;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.placeholder-image {
+
+  font-size: 24px;
+  color: #ccc;
+
+}
+
+.product-details {
+  padding: 50px;
+}
+
+.product-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px; 
+}
+
+.product-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-meta span {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.product-total-price {
+  font-weight: bold;
+  color: #007bff;
+}
+
+
+/* Optional: Add custom CSS styling for your page */
+/* body {
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+background-color: #f8f8f8;
+padding-top: 20px;
+} */
+
+
+
+
+
+

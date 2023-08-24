@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+
+<!-- product-list.component.html -->
+<div class="product-list">
+
+    <h2 class="product-list-heading">Product List</h2>
+
+      <button class="btn btn-primary" style="margin-left: 45px; " routerLink="/farmer">Back</button>
+      <hr>
+
+    <ul class="product-items">
+      <li *ngFor="let product of products" class="product-item">
+        <div class="product-thumbnail">
+          <img [src]="product.productImgUrl" [alt]="product.productName" (click)="onProductClick(product)">
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">{{ product.productName }}</h3>
+          <div class="product-meta">
+            <span class="product-quantity">Quantity Available: {{ product.productQuantity }}</span>
+            <span class="product-unit-price">Unit Price: {{ product.productUnitPrice | currency:'INR' }}</span>
+            <span class="product-total-price">Total: {{ product.productQuantity * product.productUnitPrice | currency:'INR' }}</span>
+            <!-- <span class="product-image-url">ProductImageUrl: {{ product.productImgUrl }}</span> -->
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+  
+  <app-footer></app-footer>

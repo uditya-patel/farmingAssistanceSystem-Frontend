@@ -1,0 +1,27 @@
+<!-- complaint-form.component.html -->
+
+<app-navbar></app-navbar>
+
+<div class="complaint-form-container">
+  
+  <h2>Complaint Form</h2>
+  <form (submit)="submitForm()">
+    <div>
+      <label for="complaintMessage" class="form-label">Complaint Message:</label>
+      <textarea
+        id="complaintMessage"
+        name="complaintMessage"
+        class="form-input"
+        [(ngModel)]="complaintMessage"
+        required
+        rows="4"
+      ></textarea>
+    </div>
+    <button type="submit">Submit Complaint</button>
+  </form>
+
+  <!-- Back button -->
+  <button (click)="goBack()">Back</button>
+</div>
+
+<app-footer></app-footer>

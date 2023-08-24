@@ -1,0 +1,66 @@
+<!-- <div class="container">
+    <h2>Create Order for Supplier</h2>
+    <div class="supplier-info">
+      Supplier Email: {{ supplierEmail }}
+    </div>
+    <form (ngSubmit)="submitOrder()">
+      <div *ngFor="let product of products; let i = index" class="product-input">
+        <label for="product{{i}}">Product {{ i + 1 }}:</label>
+        <input
+          type="text"
+          id="product{{i}}"
+          [(ngModel)]="products[i]"
+          name="product{{i}}"
+          required
+        />
+        <button type="button" class="remove-product" (click)="removeProduct(i)">
+          Remove
+        </button>
+      </div>
+      <button type="button" class="add-product" (click)="addProduct()">
+        Add Product
+      </button>
+      <button type="submit" class="submit-order">Submit Order</button>
+    </form>
+  </div>
+   -->
+
+
+   <!-- product-list.component.html -->
+<div class="product-list">
+
+  <h2 class="product-list-heading">Product List</h2>
+
+    <button class="btn btn-primary" style="margin-left: 45px; " routerLink="/farmer">Back</button>
+
+  <ul class="product-items">
+    <li *ngFor="let product of products" class="product-item">
+      <div class="product-thumbnail">
+        <img [src]="product.productImgUrl" [alt]="product.productName" (click)="onProductClick(product)" >
+      </div>
+      <div class="product-details">
+        <h3 class="product-name">{{ product.productName }}</h3>
+        <div class="product-meta">
+          <span class="product-quantity">Quantity Available: {{ product.productQuantity }}</span>
+          <span class="product-unit-price">Unit Price: {{ product.productUnitPrice | currency:'INR' }}</span>
+          <!-- <span class="product-total-price">Total: {{ product.productQuantity * product.productUnitPrice | currency:'INR' }}</span> -->
+          <!-- <span class="product-image-url">ProductImageUrl: {{ product.productImgUrl }}</span> -->
+          <div class="supplier-email-input">
+            <label for="supplierEmail{{ product.email }}">Enter Supplier Email:</label>
+            <input type="email" id="supplierEmail{{ product.email }}" [(ngModel)]="product.supplierEmail">
+          </div>
+          <div class="supplier-quantity-input">
+            <label for="supplierEmail{{ product.quantity }}">Enter Quantity:</label>
+            <input type="text" id="quantity{{ product.quantity }}" [(ngModel)]="product.supplierQuantity">
+          </div>
+          <button class="btn btn-primary" (click)="makeOrder(product)">Make Order</button>
+
+        </div>
+      </div>
+
+    </li>
+  </ul>
+</div>
+
+
+

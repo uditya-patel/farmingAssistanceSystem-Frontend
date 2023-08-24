@@ -1,0 +1,77 @@
+.add-product-form {
+    transition: transform 0.3s ease-in-out;
+    max-width: 500px;
+    max-height: 473px;
+    overflow-y: scroll;
+    margin: 50px auto; /* Add margin for spacing above and below the form */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .add-product-form:hover {
+    transform: scale(1.08); /* Change the scaling factor to your desired hover effect */
+    
+  }
+  
+  .add-product-form h2 {
+    font-size: 28px;
+    /* margin-bottom: 20px; */
+    color: #333;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  button {
+    background-color: #2e3439 ;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #1c7d59;
+  }
+  
+  /* Add some spacing between the form elements */
+  .form-group:not(:first-child) {
+    margin-top: 15px;
+  }
+  
+  /* Style the input and textarea placeholders */
+  input::placeholder, textarea::placeholder {
+    color: #999;
+    font-weight: normal;
+  }
+  

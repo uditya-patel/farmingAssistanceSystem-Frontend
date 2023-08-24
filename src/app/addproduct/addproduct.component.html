@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+
+
+<div class="add-product-form">
+  
+    <h2>Add Product</h2>
+    <form (submit)="onSubmit()">
+      <div class="form-group">
+        <label for="productName">Product Name</label>
+        <input type="text" id="productName" name="productName" [(ngModel)]="product.productName" required>
+      </div>
+      <div class="form-group">
+        <label for="productPrice">Price per product</label>
+        <input type="number" id="productPrice" name="productPrice" [(ngModel)]="product.productUnitPrice" required>
+      </div>
+      <div class="form-group">
+        <label for="productName">Product Quantity</label>
+        <input type="text" id="productQuantity" name="productQuantity" [(ngModel)]="product.productQuantity" required>
+      </div>
+      <div class="form-group">
+        <label for="productImgUrl">Product Image Url</label>
+        <input type="text" id="productImgUrl" name="productImgUrl" [(ngModel)]="product.productImgUrl" required>
+      </div>
+      <button type="submit">Add Product</button>
+    </form>
+    <br>
+    <button routerLink="/farmer">Back</button>
+  </div>
+  
+  <app-footer></app-footer>

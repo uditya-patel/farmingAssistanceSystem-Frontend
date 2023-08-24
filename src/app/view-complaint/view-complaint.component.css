@@ -1,0 +1,79 @@
+.card {
+    height: 550px;
+    width: 1000px;
+    overflow-y: auto;
+    margin-right: 90PX;
+    margin-left: -90px;
+    margin-bottom: 160px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .card-body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  
+  .card-header {
+    background-color: #2e3439;
+    color: #fff;
+    padding: 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .card-title {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .list-group-item {
+    border: none;
+    border-radius: 0;
+    padding: 16px 0;
+  }
+  
+  .list-group-item:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .complaint-id {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .complaint-message {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .complaint-status {
+    color: #28a745;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  
+  .complaint-user,
+  .complaint-user-role {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .complaint-user-role {
+    margin-bottom: 16px;
+    
+  }
+
+  button {
+      background-color: #2e3439;
+  }
+
+  button:hover {
+    background-color: #1c7d59;
+  }
+  

@@ -1,0 +1,81 @@
+/* add-advertisement.component.css */
+
+/* Container for the form */
+.add-advertisement-container {
+    max-width: 600px;
+    height: 400px;
+    margin: 110px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .add-advertisement-container:hover {
+
+    transform: scale(1.08);
+
+  }
+
+
+
+  .add-advertisement-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+
+  .add-advertisement-container:hover {
+    transform: scale(1.08); /* Change the scaling factor to your desired hover effect */
+    
+  }
+  
+  /* Form fields */
+  .form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Submit button */
+  .form-submit-btn {
+    
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Error message */
+  .error-message {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  /* Success message */
+  .success-message {
+    color: green;
+    margin-top: 5px;
+  }
+
+  button {
+    background-color: #2e3439;
+  }
+
+  button:hover {
+    background-color: #1c7d59;
+  }
