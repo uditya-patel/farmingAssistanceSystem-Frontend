@@ -1,0 +1,21 @@
+.cart-area.d-n{
+    display:block;
+    /* margin-top: 15px; */
+}
+
+.total {
+    margin-top: 15px;
+    color: #fff;
+}
+
+.cart-area i{
+    font-size:22px;
+    float:left;
+    margin-top:16px;
+    color:#fff;
+    margin-left:15px
+}
+
+.cart-area a{
+    display: flex;
+}

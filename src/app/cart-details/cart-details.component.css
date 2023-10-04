@@ -1,0 +1,51 @@
+.main-content {
+    margin-top: 50px;
+}
+
+.table{
+    margin:0;
+    
+    
+}
+
+table.table.table-bordered{
+    border:1px solid #ccc;
+    background:#fff;
+    
+    
+}
+.table-bordered td,.table-bordered th{
+    border:1px solid #dee2e6;
+    
+}
+table.table.table-bordered th{
+    BACKGROUND:#1c7d59;
+    color:#fff;
+    font-size:14px;
+    padding:10px;
+}
+
+.items {
+    display: flex;
+}
+
+.fl {
+    display: flex;
+}
+
+p {
+    font-family: sans-serif;
+
+}
+
+td {
+    justify-content: center;
+}
+
+.btn-primary {
+    BACKGROUND:#1c7d59;
+
+}
+
+
+

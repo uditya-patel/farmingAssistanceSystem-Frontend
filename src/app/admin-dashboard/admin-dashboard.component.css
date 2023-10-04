@@ -2,6 +2,7 @@
 .dashboard-container {
     display: flex;
     height: 100vh; /* Set the container height to full viewport height */
+    /* overflow: auto; */
   }
   
   .navbar {

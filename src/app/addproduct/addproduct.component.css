@@ -1,7 +1,7 @@
 .add-product-form {
     transition: transform 0.3s ease-in-out;
     max-width: 500px;
-    max-height: 473px;
+    max-height: 600px;
     overflow-y: scroll;
     margin: 50px auto; /* Add margin for spacing above and below the form */
     padding: 20px;

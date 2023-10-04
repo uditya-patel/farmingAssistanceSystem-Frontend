@@ -9,8 +9,8 @@
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-position: center center; /* Center the image horizontally and vertically */
     background-color: #f0f0f0; /* Light grey background color */
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
   }
 
   .container {

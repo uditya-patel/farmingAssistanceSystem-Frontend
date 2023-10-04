@@ -17,6 +17,7 @@ export class AddproductComponent implements OnInit {
   }
 
   product: Product = {
+    productId: '',
     productName: '',
     productUnitPrice: 0,
     productQuantity: 0,

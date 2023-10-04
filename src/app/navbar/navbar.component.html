@@ -30,7 +30,7 @@
 
 
    
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-fixed-top navbar-default" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
@@ -47,7 +47,8 @@
     <ul class="nav navbar-nav navbar-right">
       <!-- Always show these buttons -->
       <li routerLinkActive="active"><a routerLink="/about-us">About Us</a></li>
-      <li routerLinkActive="active"><a href="#">Contact Us</a></li>
+      <li routerLinkActive="active"><a routerLink="/contact-us">Contact Us</a></li>
+
       
       <!--Show these buttons only if the userRole is 'admin' -->
        <!-- <ng-container *ngIf="userRole === 'admin'">
@@ -59,9 +60,17 @@
         <li  routerLinkActive="active"><a routerLink="/add-advertisement">Add Advertisement</a></li>
         <!-- <li routerLinkActive="active"><a routerLink="/view-complaint">Update Complaints</a></li> -->
       </ng-container>
+      <ng-container *ngIf="userRole === 'farmer'">
+        <li  routerLinkActive="active"><a routerLink="/cart">My Cart</a></li>
+      </ng-container>
       <!-- Show the following buttons based on login status -->
       <li *ngIf="!isAuthenticated" routerLinkActive="active"><a routerLink="/signup">Sign Up</a></li>
       <li *ngIf="!isAuthenticated" routerLinkActive="active"><a routerLink="/login">Login</a></li>
       <li *ngIf="isAuthenticated" routerLinkActive="active"><a (click)="onLogout()">Logout</a></li>
+      <li *ngIf="isAuthenticated" routerLinkActive="active">
+        <app-cart-status></app-cart-status>
+      </li>
+      <!-- <app-cart-status></app-cart-/> -->
+      
     </ul>
   </div>

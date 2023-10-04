@@ -30,10 +30,11 @@ import { AddproductComponent } from './addproduct/addproduct.component';
 import { TestComponent } from './test/test.component';
 import { ViewAdvertisementsComponent } from './view-advertisements/view-advertisements.component';
 import { ViewAllAdvertisementsComponent } from './view-all-advertisements/view-all-advertisements.component';
-import { CreateorderComponent } from './createorder/createorder.component';
 import { OrderComponent } from './order/order.component';
-import { CartComponent } from './cart/cart.component';
 import { AddcomplaintComponent } from './addcomplaint/addcomplaint.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { CartStatusComponent } from './cart-status/cart-status.component';
+import { CartDetailsComponent } from './cart-details/cart-details.component';
 
 // import { MyproductsComponent } from './myproducts/myproducts.component';
 
@@ -47,15 +48,16 @@ import { AddcomplaintComponent } from './addcomplaint/addcomplaint.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'test', component: TestComponent},
+  { path: 'cart-details', component: CartDetailsComponent},
   { path: 'addproduct', component: AddproductComponent},
   { path: 'signup', component: SignupComponent},
   { path: 'login', component: LoginComponent},
   { path: 'about-us', component: AboutUsComponent},
+  { path: 'contact-us', component: ContactUsComponent },
   { path: 'add-complaint', component: AddcomplaintComponent},
   { path: 'addadvertisement', component: AddAdvertisementComponent},
   { path: 'view-advertisements', component: ViewAdvertisementsComponent},
   { path: 'allAdvertisements', component: ViewAllAdvertisementsComponent},
-  { path: 'createorder', component: CreateorderComponent},
   { path: 'order', component: OrderComponent},
   { path: 'admin', component: AdminDashboardComponent, canActivate: [AuthGuard], data : {role: 'ROLE_ADMIN'} },
   { path: 'farmer', component: FarmerDashboardComponent, canActivate: [AuthGuard], data : {role: 'ROLE_FARMER'} },
@@ -94,10 +96,11 @@ const routes: Routes = [
    TestComponent,
    ViewAdvertisementsComponent,
    ViewAllAdvertisementsComponent,
-   CreateorderComponent,
    OrderComponent,
-   CartComponent,
    AddcomplaintComponent,
+   ContactUsComponent,
+   CartStatusComponent,
+   CartDetailsComponent,
 
    
   ],

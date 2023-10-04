@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { CartItem } from '../cart-item';
+import { CartService } from '../cart.service';
+import { Product } from '../product';
 import { ProductService } from '../product.service';
 
 @Component({
@@ -6,11 +9,24 @@ import { ProductService } from '../product.service';
   templateUrl: './test.component.html',
   styleUrls: ['./test.component.css']
 })
-export class TestComponent implements OnInit {
+export class TestComponent {
 
-  products: any[];
+  products: any[] = []; // Your product data
+
+  constructor(private cartService: CartService, private productService: ProductService) {}
+
+  addToCart(theProduct: Product) {
+    console.log(`adding to cart: ${theProduct.productName}, ${theProduct.productUnitPrice}`);
+
+    const theCartItem = new CartItem(theProduct);
+
+    this.cartService.addToCart(theCartItem);
+  }
   
-  constructor(private productService: ProductService) { }
+
+//   products: any[];
+  
+//   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
     this.getproducts();
@@ -21,8 +37,10 @@ getproducts(){
     console.log(data);
   })
 }
-onProductClick(product: any): void {
-  console.log('Product clicked:', product);
-  // You can add any specific logic you want to perform when a product is clicked
-}
+// onProductClick(product: any): void {
+//   console.log('Product clicked:', product);
+//   // You can add any specific logic you want to perform when a product is clicked
+// }
+
+
 }
